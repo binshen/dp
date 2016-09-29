@@ -18,6 +18,7 @@
   <?php
     $k = @$_GET['k'];
     $loc_names = ['北京市蓝星汽车修理厂(39.837595,116.438341)', '辽宁丹东永兴机械厂(40.201055,124.285136)', '厦门鼓浪屿(24.452266,118.073486)', '西藏山南地区幼儿园(29.242729,91.775864)'];
+    $lvl_spans = ['<span class="tag tag_l5">重度污染</span>', '<span class="tag tag_l4">中度污染</span>', '<span class="tag tag_l1">优</span>', '<span class="tag tag_l1">优</span>'];
     $locations = ['bj', 'ln', 'xm', 'xz'];
     $loc_codes = ['101010100', '101070601', '101230201', '101140301'];
     $yyht_rates = [6, 6, 0, 0];
@@ -26,6 +27,7 @@
 
     $loc = $locations[$k];
     $loc_name = $loc_names[$k];
+    $lvl_span = $lvl_spans[$k];
     $loc_code = $loc_codes[$k];
     $yyht_rate = $yyht_rates[$k];
     $pm25_data = $pm25_datas[$k];
@@ -70,7 +72,7 @@
   <div class="admin-content">
       <ul class="am-avg-sm-1 am-padding am-avg-md-8 am-text-center">
         <li class="ico_info"><a class="am-text-success"><span class="am-icon-btn am-icon-file-text"><img src="assets/images/ico01.png"></span><br/>PM2.5
-<span class="tag tag_l5">重度污染</span>
+<?php echo $lvl_span; ?>
         </br><span id="pm25Temp">0</span>(ug/m³)</a></li>
         <li class="ico_info"><a class="am-text-success"><span class="am-icon-btn am-icon-file-text"><img src="assets/images/ico02.png"></span><br/>甲醛<br/><span id="jiaquanTemp">0</span>(mg/m³)</a></li>
         <li class="ico_info"><a class="am-text-success"><span class="am-icon-btn am-icon-file-text"><img src="assets/images/ico03.png"></span><br/>温度<br/><span id="wenduTemp">27</span></a></li>
