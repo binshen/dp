@@ -1,0 +1,18 @@
+/* Write your styles */
+
+.logo{display:block;float:left;width:44px;padding-left:8px}
+.logo img{width:32px;height:38px;padding-bottom:6px}
+
+.main_box{background-color:#9C3}
+.content_box{padding:0rem 1rem 0.4rem 1.6rem}
+.chart_box{background:url(../images/box_bg.png) left top no-repeat;background-size:100% 100%;padding:1rem 1rem 0 0;height:200px!important}
+
+.small_t{font-size:1.8rem}
+.ico_info{line-height:1.5rem !important}
+
+.tag{padding:0 4px;margin-left:4px;font-size:12px;text-shadow: none;}
+.tag_l1{background-color:#6eb720}
+.tag_l2{background-color:#d6c60f}
+.tag_l3{background-color:#ec7e22}
+.tag_l4{background-color:#df2d00;}
+.tag_l5{background-color:#b414bb}
